@@ -1,0 +1,716 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flux Fashion</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body class="showCart">
+    <div class="body">
+      <div class="slideshow-container">
+        <div class="slide">
+          <h1>ELEGANCE IS <strong>ALWAYS</strong> IN STYLE</h1>
+          <button>Shop now</button>
+        </div>
+        <div class="slide">
+          <h1>ELEVATE YOUR <strong>STYLE</strong> WITH TREND</h1>
+          <button>Shop now</button>
+        </div>
+        <div class="slide">
+          <h1>FLAUNT YOUR <strong>STYLE</strong> WITH UNIQUE</h1>
+          <button>Shop now</button>
+        </div>
+      </div>
+      <div class="navbar">
+        <ul>
+          <div class="ul">
+            <li><a href="home">Home</a></li>
+            <li><a href="shop">Shop</a></li>
+            <li><a href="about us">About us</a></li>
+            <li><a href="pages">Pages</a></li>
+            <li><a href="contact">Contact</a></li>
+            <li><a href="#" id="kloth">Flux Fashion</a></li>
+            <li>
+              <a href="" id="Cart">Cart (<span class="Add">0</span>)</a>
+            </li>
+          </div>
+        </ul>
+      </div>
+    </div>
+
+    <!-- section 2 -->
+    <section id="projects">
+      <div class="container">
+        <div class="products">
+          <div class="products-title">
+            <h1>Our latest products</h1>
+          </div>
+
+          <!-- Filter Buttons -->
+          <div class="filter_buttons">
+            <a class="item-link active" data-name="all" href="#">All</a>
+            <a class="item-link" data-name="tshirt" href="#">T-shirt</a>
+            <a class="item-link" data-name="shirt" href="#">Shirt</a>
+            <a class="item-link" data-name="accessories" href="#"
+              >Accessories</a
+            >
+            <a class="item-link" data-name="footwear" href="#">Footwear</a>
+          </div>
+
+          <!-- Image Cards -->
+        </div>
+
+        <div class="filterable_cards">
+          <div class="card" data-name="shirt">
+            <img
+              class="products-img"
+              src="./images/6746fb0b233b5226ef7f731a_collection-img1.jpg"
+              alt=""
+            />
+            <div class="card_body">
+              <h6 class="card_title">Shirt cloths</h6>
+              <p class="card_price">$300.00 USD</p>
+              <button class="add-to-cart">Add To Cart</button>
+            </div>
+          </div>
+          <div class="card" data-name="shirt">
+            <img
+              class="products-img"
+              src="./images/6746fb3d0d1851c0b6e03761_collection-img11.jpg"
+              alt=""
+            />
+            <div class="card_body">
+              <h6 class="card_title">Women shirt</h6>
+              <p class="card_price">$300.00 USD</p>
+              <button class="add-to-cart">Add To Cart</button>
+            </div>
+          </div>
+          <div class="card" data-name="footwear">
+            <img
+              class="products-img"
+              src="./images/674efbba76f5981792df0c45_product-img30-p-500.jpg"
+              alt=""
+            />
+            <div class="card_body">
+              <h6 class="card_title">Kids footwear</h6>
+              <p class="card_price">$300.00 USD</p>
+              <button class="add-to-cart">Add To Cart</button>
+            </div>
+          </div>
+          <div class="card" data-name="tshirt">
+            <img
+              class="products-img"
+              src="./images/674aeec90148447694257a51_product-img23.jpg"
+              alt=""
+            />
+            <div class="card_body">
+              <h6 class="card_title">Minnie t-shirt</h6>
+              <p class="card_price">$300.00 USD</p>
+              <button class="add-to-cart">Add To Cart</button>
+            </div>
+          </div>
+          <div class="card" data-name="tshirt">
+            <img
+              class="products-img"
+              src="./images/674aeecae29365b448e5bb4b_product-img22.jpg"
+              alt=""
+            />
+            <div class="card_body">
+              <h6 class="card_title">Printed t-shirts</h6>
+              <p class="card_price">$300.00 USD</p>
+              <button class="add-to-cart">Add To Cart</button>
+            </div>
+          </div>
+          <div class="card" data-name="shirt">
+            <img
+              class="products-img"
+              src="./images/674af2d3348ad759bc37bf2e_product-img14.jpg"
+              alt=""
+            />
+            <div class="card_body">
+              <h6 class="card_title">Plain shirt</h6>
+              <p class="card_price">$300.00 USD</p>
+              <button class="add-to-cart">Add To Cart</button>
+            </div>
+          </div>
+          <div class="card" data-name="shirt">
+            <img
+              class="products-img"
+              src="./images/674af2d3a181b2d2bd70c284_product-img16-p-500 (1).jpg"
+              alt=""
+            />
+            <div class="card_body">
+              <h6 class="card_title">Women shirt</h6>
+              <p class="card_price">$300.00 USD</p>
+              <button class="add-to-cart">Add To Cart</button>
+            </div>
+          </div>
+          <div class="card" data-name="shirt">
+            <img
+              class="products-img"
+              src="./images/674af2eae29365b448e861e5_product-img13.jpg"
+              alt=""
+            />
+            <div class="card_body">
+              <h6 class="card_title">Patterned shirts</h6>
+              <p class="card_price">$300.00 USD</p>
+              <button class="add-to-cart">Add To Cart</button>
+            </div>
+          </div>
+          <div class="card" data-name="accessories">
+            <img
+              class="products-img"
+              src="./images/674efb39c8a86dd14d2bf194_product-img46.jpg"
+              alt=""
+            />
+            <div class="card_body">
+              <h6 class="card_title">Hand bag</h6>
+              <p class="card_price">$300.00 USD</p>
+              <button class="add-to-cart">Add To Cart</button>
+            </div>
+          </div>
+          <div class="card" data-name="accessories">
+            <img
+              class="products-img"
+              src="./images/674efc2e1ca3b15ecccc893e_product-img51-p-500.jpg"
+              alt=""
+            />
+            <div class="card_body">
+              <h6 class="card_title">Stylist sling bag</h6>
+              <p class="card_price">$300.00 USD</p>
+              <button class="add-to-cart">Add To Cart</button>
+            </div>
+          </div>
+          <div class="card" data-name="footwear">
+            <img
+              class="products-img"
+              src="./images/674f002690ae8dcb468c8c85_collection-img4.jpg"
+              alt=""
+            />
+            <div class="card_body">
+              <h6 class="card_title">Men shoes</h6>
+              <p class="card_price">$300.00 USD</p>
+              <button class="add-to-cart">Add To Cart</button>
+            </div>
+          </div>
+          <div class="card" data-name="accessories">
+            <img
+              class="products-img"
+              src="./images/67518431d3d2ba5acfc17b09_product-img59.jpg"
+              alt=""
+            />
+            <div class="card_body">
+              <h6 class="card_title">Men purse</h6>
+              <p class="card_price">$300.00 USD</p>
+              <button class="add-to-cart">Add To Cart</button>
+            </div>
+          </div>
+          <div class="card" data-name="shirt">
+            <img
+              class="products-img"
+              src="./images/6751835075a2ec90366f286e_product-img64.jpg"
+              alt=""
+            />
+            <div class="card_body">
+              <h6 class="card_title">Kids cloths</h6>
+              <p class="card_price">$300.00 USD</p>
+              <button class="add-to-cart">Add To Cart</button>
+            </div>
+          </div>
+
+          <div class="card" data-name="accessories">
+            <img
+              class="products-img"
+              src="./images/67517d5a5c38285699be0fa8_product-img62-p-500.jpg"
+              alt=""
+            />
+            <div class="card_body">
+              <h6 class="card_title">Girl fashion hats</h6>
+              <p class="card_price">$300.00 USD</p>
+              <button class="add-to-cart">Add To Cart</button>
+            </div>
+          </div>
+          <div class="card" data-name="accessories">
+            <img
+              class="products-img"
+              src="./images/674f0014dabc8463d8e197ef_collection-img2.jpg"
+              alt=""
+            />
+            <div class="card_body">
+              <h6 class="card_title">Sunglasses for men</h6>
+              <p class="card_price">$300.00 USD</p>
+              <button class="add-to-cart">Add To Cart</button>
+            </div>
+          </div>
+          <div class="card" data-name="accessories">
+            <img
+              class="products-img"
+              src="./images/675181c5146a5eb10115675e_product-img57.jpg"
+              alt=""
+            />
+            <div class="card_body">
+              <h6 class="card_title">Fancy kids bag</h6>
+              <p class="card_price">$300.00 USD</p>
+              <button class="add-to-cart">Add To Cart</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 2 -->
+
+    <div class="section2">
+      <div class="left-box">
+        <img
+          src="./images/672ca88eaaef78fe2b1fe70e_single-col-img-ezgif.com-avif-to-jpg-converter.jpg"
+          alt=""
+        />
+      </div>
+
+      <div class="right-box">
+        <div class="button-hover"></div>
+        <h2>Effortless style for everyday wear</h2>
+        <p>
+          Fashion is not something that exists in dresses only. Fashion is in
+          the sky, in the street, fashion has to do with ideas, the way we live,
+          what is happening.
+        </p>
+        <a class="button-link1" href="#">
+          <div>Shop now</div>
+        </a>
+      </div>
+    </div>
+
+    <!-- Section 3 -->
+
+    <div class="section-3">
+      <div class="section-3-header-title">
+        <h1>Check Our Collection</h1>
+      </div>
+
+      <div class="product-collection">
+        <div class="grid">
+          <!-- Grid 1 -->
+          <div class="swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img
+                  src="./images/674f002a166d5e3f6ac7b03d_collection-img5.jpg"
+                  alt=""
+                />
+                <div class="title">
+                  <span>Footware</span>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="./images/674f002a166d5e3f6ac7b03d_collection-img5.jpg"
+                  alt=""
+                />
+                <div class="title">
+                  <span>Footware</span>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="./images/674f002a166d5e3f6ac7b03d_collection-img5.jpg"
+                  alt=""
+                />
+                <div class="title">
+                  <span>Footware</span>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="./images/674f002a166d5e3f6ac7b03d_collection-img5.jpg"
+                  alt=""
+                />
+                <div class="title">
+                  <span>Footware</span>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="./images/674f002a166d5e3f6ac7b03d_collection-img5.jpg"
+                  alt=""
+                />
+                <div class="title">
+                  <span>Footware</span>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="./images/674f002a166d5e3f6ac7b03d_collection-img5.jpg"
+                  alt=""
+                />
+                <div class="title">
+                  <span>Footware</span>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="./images/674f002a166d5e3f6ac7b03d_collection-img5.jpg"
+                  alt=""
+                />
+                <div class="title">
+                  <span>Footware</span>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="./images/674f002a166d5e3f6ac7b03d_collection-img5.jpg"
+                  alt=""
+                />
+                <div class="title">
+                  <span>Footware</span>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="./images/674f002a166d5e3f6ac7b03d_collection-img5.jpg"
+                  alt=""
+                />
+                <div class="title">
+                  <span>Footware</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-pagination"></div>
+          </div>
+          <!-- Grid 2 -->
+          <div class="swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img
+                  src="./images/674f000d98de4b0295a6a68d_Collection-img1.jpg"
+                  alt=""
+                />
+                <div class="title">
+                  <span>Accessories</span>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="./images/674f000d98de4b0295a6a68d_Collection-img1.jpg"
+                  alt=""
+                />
+                <div class="title">
+                  <span>Accessories</span>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="./images/674f000d98de4b0295a6a68d_Collection-img1.jpg"
+                  alt=""
+                />
+                <div class="title">
+                  <span>Accessories</span>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="./images/674f000d98de4b0295a6a68d_Collection-img1.jpg"
+                  alt=""
+                />
+                <div class="title">
+                  <span>Accessories</span>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="./images/674f000d98de4b0295a6a68d_Collection-img1.jpg"
+                  alt=""
+                />
+                <div class="title">
+                  <span>Accessories</span>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="./images/674f000d98de4b0295a6a68d_Collection-img1.jpg"
+                  alt=""
+                />
+                <div class="title">
+                  <span>Accessories</span>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="./images/674f000d98de4b0295a6a68d_Collection-img1.jpg"
+                  alt=""
+                />
+                <div class="title">
+                  <span>Accessories</span>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="./images/674f000d98de4b0295a6a68d_Collection-img1.jpg"
+                  alt=""
+                />
+                <div class="title">
+                  <span>Accessories</span>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="./images/674f000d98de4b0295a6a68d_Collection-img1.jpg"
+                  alt=""
+                />
+                <div class="title">
+                  <span>Accessories</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-pagination"></div>
+          </div>
+          <!-- Grid 3 -->
+          <div class="swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img
+                  src="./images/674af2d3348ad759bc37bf2e_product-img14.jpg"
+                  alt=""
+                />
+                <div class="title">
+                  <span>Shirt</span>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="./images/674af2d3348ad759bc37bf2e_product-img14.jpg"
+                  alt=""
+                />
+                <div class="title">
+                  <span>Shirt</span>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="./images/674af2d3348ad759bc37bf2e_product-img14.jpg"
+                  alt=""
+                />
+                <div class="title">
+                  <span>Shirt</span>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="./images/674af2d3348ad759bc37bf2e_product-img14.jpg"
+                  alt=""
+                />
+                <div class="title">
+                  <span>Shirt</span>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="./images/674af2d3348ad759bc37bf2e_product-img14.jpg"
+                  alt=""
+                />
+                <div class="title">
+                  <span>Shirt</span>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="./images/674af2d3348ad759bc37bf2e_product-img14.jpg"
+                  alt=""
+                />
+                <div class="title">
+                  <span>Shirt</span>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="./images/674af2d3348ad759bc37bf2e_product-img14.jpg"
+                  alt=""
+                />
+                <div class="title">
+                  <span>Shirt</span>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="./images/674af2d3348ad759bc37bf2e_product-img14.jpg"
+                  alt=""
+                />
+                <div class="title">
+                  <span>Shirt</span>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="./images/674af2d3348ad759bc37bf2e_product-img14.jpg"
+                  alt=""
+                />
+                <div class="title">
+                  <span>Shirt</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-pagination"></div>
+          </div>
+          <!-- Grid 4 -->
+          <div class="swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img
+                  src="./images/674aeec90148447694257a51_product-img23.jpg"
+                  alt=""
+                />
+                <div class="title">
+                  <span>T-shirt</span>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="./images/674aeec90148447694257a51_product-img23.jpg"
+                  alt=""
+                />
+                <div class="title">
+                  <span>T-shirt</span>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="./images/674aeec90148447694257a51_product-img23.jpg"
+                  alt=""
+                />
+                <div class="title">
+                  <span>T-shirt</span>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="./images/674aeec90148447694257a51_product-img23.jpg"
+                  alt=""
+                />
+                <div class="title">
+                  <span>T-shirt</span>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="./images/674aeec90148447694257a51_product-img23.jpg"
+                  alt=""
+                />
+                <div class="title">
+                  <span>T-shirt</span>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="./images/674aeec90148447694257a51_product-img23.jpg"
+                  alt=""
+                />
+                <div class="title">
+                  <span>T-shirt</span>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="./images/674aeec90148447694257a51_product-img23.jpg"
+                  alt=""
+                />
+                <div class="title">
+                  <span>T-shirt</span>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="./images/674aeec90148447694257a51_product-img23.jpg"
+                  alt=""
+                />
+                <div class="title">
+                  <span>T-shirt</span>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="./images/674aeec90148447694257a51_product-img23.jpg"
+                  alt=""
+                />
+                <div class="title">
+                  <span>T-shirt</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- section 4 -->
+    <section>
+      <div class="main">
+        <div class="main2">
+          <h3 class="e"><i>Limited Offer</i></h3>
+          <h1 class="ee">Be cute be fashionable</h1>
+          <p>
+            Fashion is about dressing according to what's fashionable. Style is
+            more about being yourself. Fashion is the armour to survive the
+            reality of everyday life.
+          </p>
+          <div class="box">
+            <h2 class="box1">10 <br />Days</h2>
+            <h2 class="box2">09 <br />Hrs</h2>
+            <h2 class="box3">30 <br />Min</h2>
+            <h2 class="box4">50 <br />Sec</h2>
+          </div>
+          <button class="btn1">Shop now</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- section 5 -->
+    <section class>
+      <h1 class="eee">What our client say</h1>
+      <div class="like">
+        <div class="e1">
+          <div class="em">
+            <i>66</i>
+          </div>
+          <p class="en">
+            <em
+              >I had pleasure of working with the exceptional team Reagal, they
+              exceeded, From the moment I stepped intoo their office,
+            </em>
+          </p>
+          <p class="p">Prince <span>- Desginer Manager</span></p>
+        </div>
+
+        <div class="e2">
+          <div class="em">
+            <i>66</i>
+          </div>
+          <p class="en">
+            <em
+              >I had pleasure of working with the exceptional team Reagal, they
+              exceeded, From the moment I stepped intoo their office,
+            </em>
+          </p>
+          <p class="p">DaveTech <span>- Operations Manager</span></p>
+        </div>
+      </div>
+    </section>
+
+    <footer></footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="./main.js"></script>
+  </body>
+</html>
